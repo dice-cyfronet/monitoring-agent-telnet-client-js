@@ -35,3 +35,15 @@ module.exports.checkBasicMetricReporting = function(test) {
         test.done();
     });
 };
+
+module.exports.checkIncompleteMetricReporting = function(test) {
+
+    metricClient = new MetricClient('localhost', port);
+    metricClient.report({applicationName: 'testApp', value: 0}, function (err) {
+        if(err) {
+            test.done();
+            return;
+        }
+        test.fail();
+    });
+};
