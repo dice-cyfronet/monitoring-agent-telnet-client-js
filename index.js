@@ -1,22 +1,5 @@
-var net = require('net');
-var util = require('util');
+var client = require('./lib/client.js');
+var builder = require('./lib/builder.js');
 
-var MetricClient = function (host, port) {
-    this.visorHost = host;
-    this.visorPort = port;
-};
-
-MetricClient.prototype.report = function (metric, cb) {
-    var client = net.connect({host: this.visorHost, port: this.visorPort}, function () {
-        if (!metric.hasOwnProperty('timestamp')) {
-            metric['timestamp'] = parseInt(Date.now() / 1000);
-        }
-
-        var metricText = util.format('%s %s %s %s\r\n', metric.applicationName, metric.metricName, metric.value, metric.timestamp);
-        client.write(metricText);
-        client.destroy();
-        cb();
-    });
-};
-
-module.exports.MetricClient = MetricClient;
+module.exports.MetricClient = client.MetricClient;
+module.exports.MetricBuilder = builder.MetricBuilder;
