@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dice-cyfronet/monitoring-agent-telnet-client-js/issues"
   },
-  "homepage": "https://github.com/dice-cyfronet/monitoring-agent-telnet-client-js#readme"
+  "homepage": "https://github.com/dice-cyfronet/monitoring-agent-telnet-client-js#readme",
+  "dependencies": {
+    "nodeunit": "^0.9.1"
+  }
 }
