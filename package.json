@@ -2,6 +2,7 @@
   "name": "monitoring-agent-telnet-client-js",
   "version": "1.0.0",
   "description": "Client for visor monitoring software",
+  "main": "index.js",
   "scripts": {
     "test": ""
   },
