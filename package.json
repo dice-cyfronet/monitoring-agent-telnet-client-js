@@ -1,0 +1,22 @@
+{
+  "name": "monitoring-agent-telnet-client-js",
+  "version": "1.0.0",
+  "description": "Client for visor monitoring software",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dice-cyfronet/monitoring-agent-telnet-client-js.git"
+  },
+  "keywords": [
+    "visor",
+    "visor-client"
+  ],
+  "author": "Maciej Pawlik <m.pawlik@cyfronet.pl>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dice-cyfronet/monitoring-agent-telnet-client-js/issues"
+  },
+  "homepage": "https://github.com/dice-cyfronet/monitoring-agent-telnet-client-js#readme"
+}
